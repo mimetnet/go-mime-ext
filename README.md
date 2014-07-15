@@ -1,7 +1,9 @@
 
 # go-mime-ext
 
-Add functions that golang’s mime should have to compliment TypeByExtension, and AddExtensionType.
+Add functions that compliment mime’s TypeByExtension, and AddExtensionType by
+providing the other side of the coin. This allows us to convert Content-Type’s
+into file extensions.
 
  - AddTypeExtension
  - ExtensionByType
@@ -31,9 +33,9 @@ defer read.Close()
 read.Read(head)
 read.Seek(0, 0)
 
+// ctype = application/pdf
 ctype := http.DetectContentType(head)
 
-// if ctype = application/pdf
 // fext = .pdf
 fext := ExtensionByType(ctype)
 ```
