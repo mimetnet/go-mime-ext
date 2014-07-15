@@ -14,6 +14,8 @@ into file extensions.
 $ go get github.com/mimetnet/go-mime-ext
 ```
 
+[![build status][1]][2]
+
 ## Example
 
 ```go
@@ -43,3 +45,7 @@ fext := ExtensionByType(ctype)
 # License
 
  MIT
+
+
+  [1]: https://api.travis-ci.org/mimetnet/go-mime-ext.png
+  [2]: https://travis-ci.org/mimetnet/go-mime-ext
